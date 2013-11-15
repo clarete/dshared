@@ -1,7 +1,6 @@
 from distutils.core import setup, Extension
 
 module = Extension('dshared',
-                   libraries=["rt"],
                    sources = ['src/dsharedmodule.cpp',
                               'src/dshared.cpp'])
 

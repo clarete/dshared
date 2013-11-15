@@ -132,7 +132,7 @@ smap_entry_as_SList(offset_ptr<smap_value_t> val);
 
 static PySequenceMethods
 slist_seq = {
-  SList_len,/* sq_length */
+  (lenfunc) SList_len,/* sq_length */
   SList_concat,/* sq_concat */
   0,/* sq_repeat */
   SList_get_item,/* sq_item */
